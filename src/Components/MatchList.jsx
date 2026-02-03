@@ -28,7 +28,7 @@ const MatchList = ({ users, lang }) => {
     <div>
       <h2>{t("matchlist.title", lang)}</h2>
 
-      {matches.length === 0 ? (
+      {matches.length === 0 ? ( 
         <p>{t("matchlist.noMatches", lang)}</p>
       ) : (
         <div style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}>
