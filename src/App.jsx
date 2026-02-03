@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import ProfileForm from "./Components/ProfileForm";
 import MatchList from "./Components/MatchList";
 import MatchPopup from "./Components/MatchPopup"
+import Header from "./Components/Header";
 import { t } from "./i18n";
 import './App.css'
 
@@ -65,6 +66,8 @@ export default function App() {
 
   return (
     <div className="app-container">
+      <Header/>
+
       <div className="language-selector">
         <label>{t("language.select", lang)}:</label>
         <select value={lang} onChange={(e) => setLang(e.target.value)}>

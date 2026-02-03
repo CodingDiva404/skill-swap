@@ -163,6 +163,29 @@ button:hover {
   border-radius: 8px;
 }
 
+.app-header {
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #0ff;
+  letter-spacing: 1px;
+}
+
+.logo img {
+  width: 28px;
+  height: 28px;
+}
+
 
 
 @media (max-width: 600px) {
