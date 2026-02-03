@@ -121,8 +121,53 @@ button:hover {
   align-items: center;
 }
 
+
+/* Pop up */
+
+.match-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.match-card {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 320px;
+  color: #fff;
+  box-shadow: 0 0 30px rgba(0,255,255,0.3);
+}
+
+.meet-btn {
+  display: block;
+  margin: 15px 0;
+  padding: 10px;
+  background: #00f2ff;
+  color: #000;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.close-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+
+
 @media (max-width: 600px) {
   .form-row {
     grid-template-columns: 1fr;
   }
 }
+

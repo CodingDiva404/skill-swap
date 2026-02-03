@@ -3,7 +3,7 @@ import { SKILLS } from "../Data/Skills";
 import { t } from "../i18n";
 import "../App.css";
 
-const ProfileForm = ({ onSave }) => {
+const ProfileForm = ({ onSave, lang }) => {
   const [name, setName] = useState(() => localStorage.getItem("name") || "");
   const [teachSkill, setTeachSkill] = useState(() => localStorage.getItem("teachSkill") || "");
   const [learnSkill, setLearnSkill] = useState(() => localStorage.getItem("learnSkill") || "");
@@ -16,19 +16,28 @@ const ProfileForm = ({ onSave }) => {
     e.preventDefault();
 
     if (teachSkill === learnSkill) {
-      alert(t("error.sameSkill"));
+      alert(t("error.sameSkill", lang));
       return;
     }
 
     onSave({ name, teachSkill, learnSkill });
+
+    setName("");
+    setTeachSkill("");
+    setLearnSkill("");
+
+    localStorage.removeItem("name");
+    localStorage.removeItem("teachSkill");
+    localStorage.removeItem("learnSkill");
+
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2>{t("profile.create")}</h2>
+      <h2>{t("profile.create", lang)}</h2>
 
       <div>
-        <label>{t("profile.name")}</label>
+        <label>{t("profile.name", lang)}</label>
         <input
           type="text"
           value={name}
@@ -37,8 +46,9 @@ const ProfileForm = ({ onSave }) => {
         />
       </div>
 
+
       <div>
-        <label>{t("skill.teach")}</label>
+        <label>{t("skill.teach", lang)}</label>
         <select
           value={teachSkill}
           onChange={(e) => {
@@ -57,7 +67,7 @@ const ProfileForm = ({ onSave }) => {
       </div>
 
       <div>
-        <label>{t("skill.learn")}</label>
+        <label>{t("skill.learn", lang)}</label>
         <select
           value={learnSkill}
           onChange={(e) => setLearnSkill(e.target.value)}
@@ -72,8 +82,13 @@ const ProfileForm = ({ onSave }) => {
         </select>
       </div>
 
-      <button type="submit">{t("profile.save")}</button>
+
+
+      <button type="submit">{t("profile.save", lang)}</button>
+
     </form>
+
+
   );
 };
 

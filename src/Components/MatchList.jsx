@@ -3,7 +3,6 @@ import '../App.css'
 
 
 const MatchList = ({ users, lang }) => {
-  // Generate matches
   const generateMatches = () => {
     const matches = [];
     for (let i = 0; i < users.length; i++) {
@@ -28,7 +27,7 @@ const MatchList = ({ users, lang }) => {
     <div>
       <h2>{t("matchlist.title", lang)}</h2>
 
-      {matches.length === 0 ? ( 
+      {matches.length === 0 ? (
         <p>{t("matchlist.noMatches", lang)}</p>
       ) : (
         <div style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}>
@@ -37,12 +36,23 @@ const MatchList = ({ users, lang }) => {
               key={index}
             >
               <p>
-                <strong>{t("matchlist.name", lang)}:</strong> {pair[0].name} ↔ {pair[1].name}
+                <strong>
+                  {t("matchlist.name", lang, {
+                    userA: pair[0].name,
+                    userB: pair[1].name,
+                  })}
+                </strong>
               </p>
               <p>
-                <strong>{t("matchlist.teach", lang)}:</strong> {pair[0].teachSkill} ↔{" "}
-                <strong>{t("matchlist.learn", lang)}:</strong> {pair[1].learnSkill}
+                <strong>
+                  {t("matchlist.teach", lang, { skill: pair[0].teachSkill })}
+                </strong>
+                {" ↔ "}
+                <strong>
+                  {t("matchlist.learn", lang, { skill: pair[1].learnSkill })}
+                </strong>
               </p>
+
             </div>
           ))}
         </div>
