@@ -1,16 +1,135 @@
-# React + Vite
+# 🤝 Skill Swap
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Skill Swap is a matchmaking-based web application that connects users who want to **teach a skill** with users who want to **learn a skill**.  
+Think of it as **Tinder for skills** — swipe, match, and collaborate 🚀
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- 🔁 **Skill Matching Engine**  
+  Matches users based on:
+  - Skill you can teach
+  - Skill you want to learn
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 💖 **Tinder-like Match Experience**
+  - Swipe-style UI for matches
+  - Visual feedback on successful matches
+  - Sound / notification on new match (optional enhancement)
 
-## Expanding the ESLint configuration
+- 🧑‍🤝‍🧑 **Peer-to-Peer Connection**
+  - Users can connect via meeting links (Jitsi / Google Meet based)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🌍 **Multi-language Ready (i18n)**
+  - Easily extendable translation support
+
+- 💾 **Local Persistence**
+  - User profiles stored using `localStorage`
+  - No backend required for MVP
+
+- 🌙 **Modern UI**
+  - Dark + neon-inspired theme
+  - Responsive layout
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React + Vite
+- **Styling:** CSS (custom, lightweight)
+- **State Management:** React Hooks
+- **Build Tool:** Vite
+- **Deployment:** Netlify
+
+---
+
+## 📂 Project Structure
+
+```
+skill-swap/
+│
+├── public/
+│ ├── logo.svg
+│ └── _redirects
+│
+├── src/
+│ ├── Components/
+│ │ ├── Header.jsx
+│ │ ├── ProfileForm.jsx
+│ │ ├── MatchList.jsx
+│ │
+│ ├── Data/
+│ │ └── Skills.js
+│ │
+│ ├── i18n/
+│ │ └── index.js
+│ │
+│ ├── App.jsx
+│ ├── main.jsx
+│ └── App.css
+│
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+
+---
+
+## 🚀 Getting Started (Local Setup)
+
+Follow these steps to run the project on your local machine.
+
+---
+
+### ✅ Prerequisites
+
+Make sure you have:
+- **Node.js** (v18+ recommended)
+- **npm** (comes with Node.js)
+
+Check versions:
+```bash
+node -v
+npm -v
+```
+
+### 📥 Clone the Repository
+```bash
+git clone https://github.com/your-username/skill-swap.git
+cd skill-swap
+```
+
+💡 Future Enhancements
+
+🔐 Authentication (Firebase / Auth0)
+
+🗄️ Backend (Node + DB)
+
+💬 In-app chat
+
+🔔 Real-time notifications
+
+🎥 Integrated video calls
+### 📦 Install Dependencies
+```bash
+npm install
+```
+### ▶️ Run the App Locally
+``` bash
+npm run dev
+```
+
+## 💡 Future Enhancements
+
+- 🔐 Authentication (Firebase / Auth0)
+- 🗄️ Backend (Node + Database)
+- 💬 In-app chat
+- 🔔 Real-time notifications
+- 🎥 Integrated video calls
+
+## 🧑‍💻 Author
+
+Built with ❤️ by Shraddha G
+Lingo Hackathon Project | Skill-based Networking
