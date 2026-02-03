@@ -1,0 +1,14 @@
+{
+  "language.select": "Seleccionar idioma",
+  "error.duplicateName": "¡Ya existe un perfil con este nombre!",
+  "profile.create": "Crear perfil",
+  "skill.teach": "Habilidad que puedes enseñar",
+  "skill.learn": "Habilidad que quieres aprender",
+  "profile.save": "Guardar perfil",
+  "profile.name": "Nombre",
+  "matchlist.title": "Coincidencias",
+  "matchlist.noMatches": "¡Aún no se encontraron coincidencias!",
+  "matchlist.name": "{{userA}} ↔ {{userB}}",
+  "matchlist.teach": "Enseña {{skill}}",
+  "matchlist.learn": "Quiere aprender {{skill}}"
+}

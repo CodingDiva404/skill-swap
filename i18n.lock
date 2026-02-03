@@ -1,0 +1,15 @@
+version: 1
+checksums:
+  ccd9883a935d21ec9b3e775ce5a85195:
+    language.select: d75cf5fbce8a4c7a9055e2210af74480
+    error.duplicateName: fb9c5014be9f26c2985ccaec05d65db7
+    profile.create: d7de66a5236bb12599067ad116202018
+    skill.teach: e97e7a64af46f74f95b17f91efc1d71f
+    skill.learn: a951369835ea8a6a2afa6acc0eaf7d8f
+    profile.save: 41f342ca593bc15fbdb668d20bc73bcb
+    profile.name: 9368b5a047572b6051f334af5aa76819
+    matchlist.title: 8ff60c1d0e1a7e940186875ab82c28ac
+    matchlist.noMatches: e8663b51e932368bc892d881881e7980
+    matchlist.name: ce7c15b50968a15775ec10d44bd3bb12
+    matchlist.teach: 6d434a0151658e984c8fbb7965c9956b
+    matchlist.learn: 93ee7419f2fd9a06879583c03ff55590

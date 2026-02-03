@@ -1,0 +1,14 @@
+{
+  "language.select": "भाषा चुनें",
+  "error.duplicateName": "इस नाम का प्रोफ़ाइल पहले से मौजूद है!",
+  "profile.create": "प्रोफ़ाइल बनाएं",
+  "skill.teach": "वह कौशल जो आप सिखा सकते हैं",
+  "skill.learn": "वह कौशल जो आप सीखना चाहते हैं",
+  "profile.save": "प्रोफ़ाइल सहेजें",
+  "profile.name": "नाम",
+  "matchlist.title": "मैच",
+  "matchlist.noMatches": "अभी तक कोई मैच नहीं मिला!",
+  "matchlist.name": "{{userA}} ↔ {{userB}}",
+  "matchlist.teach": "{{skill}} सिखाते हैं",
+  "matchlist.learn": "{{skill}} सीखना चाहते हैं"
+}
