@@ -96,16 +96,6 @@ git clone https://github.com/your-username/skill-swap.git
 cd skill-swap
 ```
 
-💡 Future Enhancements
-
-🔐 Authentication (Firebase / Auth0)
-
-🗄️ Backend (Node + DB)
-
-💬 In-app chat
-
-🔔 Real-time notifications
-
 🎥 Integrated video calls
 ### 📦 Install Dependencies
 ```bash
