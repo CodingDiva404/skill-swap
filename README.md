@@ -12,11 +12,6 @@ Think of it as **Tinder for skills** — swipe, match, and collaborate 🚀
   - Skill you can teach
   - Skill you want to learn
 
-- 💖 **Tinder-like Match Experience**
-  - Swipe-style UI for matches
-  - Visual feedback on successful matches
-  - Sound / notification on new match (optional enhancement)
-
 - 🧑‍🤝‍🧑 **Peer-to-Peer Connection**
   - Users can connect via meeting links (Jitsi / Google Meet based)
 
