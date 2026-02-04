@@ -1,7 +1,7 @@
 # 🤝 Skill Swap
 
 Skill Swap is a matchmaking-based web application that connects users who want to **teach a skill** with users who want to **learn a skill**.  
-Think of it as **Tinder for skills** — swipe, match, and collaborate 🚀. With a removing the lanugage barrier using the Lingo CLI.
+Think of it as **Tinder for skills** — swipe, match, and collaborate 🚀. With a removing the lanugage barrier using the **Lingo CLI**.
 
 ---
 
